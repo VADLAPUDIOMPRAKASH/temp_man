@@ -11,6 +11,7 @@ export async function connectDB(): Promise<void> {
     process.env.MONGODB_URI ||
     'mongodb://localhost:27017/taskmanager';
 
+
   try {
     // Connection options for better reliability in serverless environments
     const options = {
